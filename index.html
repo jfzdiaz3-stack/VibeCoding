@@ -23,6 +23,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
                 <li><a href="#estadisticas" class="nav-link">Estadísticas</a></li>
+                <li><a href="#comparador" class="nav-link">Comparador</a></li>
                 <li><a href="#nutricion" class="nav-link">Nutrición</a></li>
                 <li><a href="#calculadora" class="nav-link">Calculadora</a></li>
             </ul>
@@ -90,22 +91,17 @@
                 <div class="hero-image-container">
                     <div class="hero-glow"></div>
                     <svg class="hero-illustration" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Figura humana estilizada -->
                         <defs>
                             <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
                                 <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
                             </linearGradient>
                         </defs>
-                        <!-- Cabeza -->
                         <circle cx="200" cy="80" r="30" fill="url(#bodyGrad)" opacity="0.9"/>
-                        <!-- Cuerpo -->
                         <path d="M200 110 L200 200 M200 140 L150 180 M200 140 L250 180 M200 200 L160 280 M200 200 L240 280" 
                               stroke="url(#bodyGrad)" stroke-width="12" stroke-linecap="round" fill="none"/>
-                        <!-- Músculos destacados -->
                         <ellipse cx="170" cy="150" rx="15" ry="25" fill="#10B981" opacity="0.6"/>
                         <ellipse cx="230" cy="150" rx="15" ry="25" fill="#10B981" opacity="0.6"/>
-                        <!-- Aura de energía -->
                         <circle cx="200" cy="200" r="120" stroke="#10B981" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="10,5">
                             <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="20s" repeatCount="indefinite"/>
                         </circle>
@@ -131,7 +127,6 @@
             </div>
 
             <div class="charts-grid">
-                <!-- Gráfica 1: Comparativa de Calorías -->
                 <div class="chart-card">
                     <div class="chart-header">
                         <h3>Calorías Quemadas por Tipo</h3>
@@ -153,7 +148,6 @@
                     </div>
                 </div>
 
-                <!-- Gráfica 2: Evolución Semanal -->
                 <div class="chart-card wide">
                     <div class="chart-header">
                         <h3>Evolución Semanal de Progreso</h3>
@@ -178,7 +172,6 @@
                 </div>
             </div>
 
-            <!-- Stats Grid -->
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-icon">🏋️</div>
@@ -216,6 +209,146 @@
         </div>
     </section>
 
+    <!-- NUEVA SECCIÓN: COMPARADOR DE PROGRESO -->
+    <section id="comparador" class="comparator-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">COMPARADOR AVANZADO</span>
+                <h2 class="section-title">Compara Tu Evolución</h2>
+                <p class="section-subtitle">Analiza el progreso entre semanas y visualiza tus mejoras</p>
+            </div>
+
+            <div class="comparator-wrapper">
+                <div class="comparator-controls">
+                    <div class="week-selector">
+                        <div class="week-box">
+                            <label>Semana Base</label>
+                            <select id="week1" class="week-select">
+                                <option value="0">Semana 1</option>
+                                <option value="1">Semana 2</option>
+                                <option value="2">Semana 3</option>
+                                <option value="3">Semana 4</option>
+                                <option value="4">Semana 5</option>
+                                <option value="5">Semana 6</option>
+                            </select>
+                            <div class="week-info" id="week1Info">
+                                <span class="week-date">1-7 Ene</span>
+                                <span class="week-status">Inicio</span>
+                            </div>
+                        </div>
+
+                        <div class="vs-divider">
+                            <span>VS</span>
+                        </div>
+
+                        <div class="week-box">
+                            <label>Semana a Comparar</label>
+                            <select id="week2" class="week-select">
+                                <option value="0">Semana 1</option>
+                                <option value="1">Semana 2</option>
+                                <option value="2">Semana 3</option>
+                                <option value="3" selected>Semana 4</option>
+                                <option value="4">Semana 5</option>
+                                <option value="5">Semana 6</option>
+                            </select>
+                            <div class="week-info" id="week2Info">
+                                <span class="week-date">22-28 Ene</span>
+                                <span class="week-status">Actual</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-compare" id="compareBtn">
+                        <span>Generar Comparación</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L12 6M16 10L12 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="comparator-results" id="comparatorResults">
+                    <div class="comparison-chart-container">
+                        <canvas id="comparisonChart"></canvas>
+                    </div>
+
+                    <div class="comparison-metrics" id="comparisonMetrics">
+                        <div class="metric-card">
+                            <div class="metric-icon">🔥</div>
+                            <div class="metric-details">
+                                <span class="metric-name">Calorías Totales</span>
+                                <div class="metric-values">
+                                    <span class="value-old" id="calOld">0</span>
+                                    <span class="value-arrow">→</span>
+                                    <span class="value-new" id="calNew">0</span>
+                                </div>
+                                <div class="metric-change positive" id="calChange">
+                                    <span class="change-percent">+0%</span>
+                                    <span class="change-label">vs semana anterior</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-icon">⏱️</div>
+                            <div class="metric-details">
+                                <span class="metric-name">Minutos Entrenamiento</span>
+                                <div class="metric-values">
+                                    <span class="value-old" id="minOld">0</span>
+                                    <span class="value-arrow">→</span>
+                                    <span class="value-new" id="minNew">0</span>
+                                </div>
+                                <div class="metric-change positive" id="minChange">
+                                    <span class="change-percent">+0%</span>
+                                    <span class="change-label">vs semana anterior</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-icon">🏋️</div>
+                            <div class="metric-details">
+                                <span class="metric-name">Peso Promedio (kg)</span>
+                                <div class="metric-values">
+                                    <span class="value-old" id="weightOld">0</span>
+                                    <span class="value-arrow">→</span>
+                                    <span class="value-new" id="weightNew">0</span>
+                                </div>
+                                <div class="metric-change positive" id="weightChange">
+                                    <span class="change-percent">+0%</span>
+                                    <span class="change-label">vs semana anterior</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-icon">🎯</div>
+                            <div class="metric-details">
+                                <span class="metric-name">Sesiones Completadas</span>
+                                <div class="metric-values">
+                                    <span class="value-old" id="sessOld">0</span>
+                                    <span class="value-arrow">→</span>
+                                    <span class="value-new" id="sessNew">0</span>
+                                </div>
+                                <div class="metric-change positive" id="sessChange">
+                                    <span class="change-percent">+0%</span>
+                                    <span class="change-label">vs semana anterior</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-summary" id="comparisonSummary">
+                        <div class="summary-icon">📊</div>
+                        <div class="summary-content">
+                            <h4>Resumen de tu Progreso</h4>
+                            <p id="summaryText">Selecciona dos semanas para ver tu comparación detallada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Sección de Nutrición -->
     <section id="nutricion" class="nutrition-section">
         <div class="container">
@@ -233,7 +366,6 @@
             </div>
 
             <div class="food-grid" id="foodGrid">
-                <!-- Las tarjetas se generarán con JavaScript -->
             </div>
 
             <div class="nutrition-tip">
@@ -340,6 +472,7 @@
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#estadisticas">Estadísticas</a></li>
+                        <li><a href="#comparador">Comparador</a></li>
                         <li><a href="#nutricion">Nutrición</a></li>
                         <li><a href="#calculadora">Calculadora</a></li>
                     </ul>

@@ -45,3 +45,27 @@ Quiero que la landing incluya:
    - script.js
 
 Quiero que me entregues el código completo de los tres archivos, listos para copiar y pegar.
+
+## PROMPT 2
+
+Quiero que añadas una nueva sección en la landing page, accesible desde el menú superior, llamada “Comparador de Progreso”.
+
+Esta sección debe permitir al usuario seleccionar dos semanas distintas (por ejemplo: Semana 1 vs Semana 4) y comparar:
+
+- Calorías quemadas totales por semana.
+- Minutos totales de entrenamiento.
+- Peso promedio levantado en ejercicios de fuerza.
+- Número total de sesiones realizadas.
+
+Quiero que muestres esta comparación mediante:
+- Una gráfica clara y visual (hecha con JavaScript vanilla, sin librerías).
+- Porcentajes de mejora o empeoramiento.
+- Un pequeño resumen textual debajo de la gráfica.
+
+Requisitos adicionales:
+- Mantén la estética actual de la landing (fitness, moderna, colores oscuros con acentos).
+- No elimines nada de lo que ya existe.
+- Modifica únicamente lo necesario en index.html, styles.css y script.js.
+- Asegúrate de que esta nueva sección también sea responsive.
+
+Entrégame el código completo actualizado de los tres archivos.
