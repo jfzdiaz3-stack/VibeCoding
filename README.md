@@ -99,3 +99,52 @@ Requisitos:
 - No elimines nada de lo que ya existe.
 - Modifica únicamente lo necesario en index.html, styles.css y script.js.
 - Entrégame el código completo actualizado de los tres archivos.
+
+**#PROMT 4**
+
+Quiero que generes una página web completa usando únicamente HTML, CSS y JavaScript (vanilla, sin frameworks). La temática es “Salud y Bienestar”.
+
+La web debe ser totalmente responsive y contener las siguientes secciones:
+
+1. Sección principal (hero):
+   - Título llamativo relacionado con salud y bienestar.
+   - Subtítulo breve.
+   - Imagen o icono relacionado con fitness o salud.
+
+2. Calculadora de IMC (Índice de Masa Corporal):
+   - Campos: peso (kg) y altura (cm).
+   - Botón para calcular.
+   - Resultado con:
+     - IMC numérico
+     - Categoría (bajo peso, normal, sobrepeso, obesidad)
+     - Un pequeño mensaje explicativo
+   - Estilo visual moderno.
+
+3. Calculadora de proteínas diarias recomendadas:
+   - Campos: peso (kg), nivel de actividad (sedentario, moderado, intenso).
+   - Fórmula:
+     - Sedentario: 1.2 g por kg
+     - Moderado: 1.6 g por kg
+     - Intenso: 2.0 g por kg
+   - Mostrar resultado en gramos por día.
+   - Mostrar una barra o indicador visual.
+
+4. Guardado de datos:
+   - Usar localStorage para guardar:
+     - Último IMC calculado
+     - Último peso introducido
+     - Última recomendación de proteínas
+   - Al recargar la página, los datos deben aparecer automáticamente.
+
+5. Estética:
+   - Diseño moderno, limpio y profesional.
+   - Colores suaves relacionados con salud (verdes, azules, blancos).
+   - Tipografía clara.
+   - Animaciones suaves en botones o tarjetas.
+
+6. Estructura del proyecto:
+   - index.html
+   - styles.css
+   - script.js
+
+Quiero que me entregues el código completo de los tres archivos, listos para copiar y pegar.
