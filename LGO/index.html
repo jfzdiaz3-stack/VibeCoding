@@ -3,107 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitLife Pro - Transforma Tu Cuerpo, Transforma Tu Vida</title>
+    <title>VitalFit - Tu Compañero de Salud y Bienestar</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navegación Fija -->
-    <nav class="navbar" id="navbar">
+    <!-- Navegación -->
+    <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20" cy="20" r="18" stroke="#10B981" stroke-width="3"/>
-                    <path d="M12 20H28M20 12V28" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
-                </svg>
-                <span>FitLife Pro</span>
+                <div class="logo-icon">🌿</div>
+                <span>VitalFit</span>
             </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#estadisticas" class="nav-link">Estadísticas</a></li>
-                <li><a href="#comparador" class="nav-link">Comparador</a></li>
-                <li><a href="#nutricion" class="nav-link">Nutrición</a></li>
-                <li><a href="#calculadora" class="nav-link">Calculadora</a></li>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#imc">IMC</a></li>
+                <li><a href="#proteinas">Proteínas</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">✨ Bienestar Integral</div>
                 <h1 class="hero-title">
-                    <span class="gradient-text">Transforma</span> Tu Cuerpo<br>
-                    Transforma Tu Vida
+                    Cuida tu cuerpo,<br>
+                    <span class="gradient-text">nutre tu vida</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Descubre el poder de la combinación perfecta entre entrenamiento de élite 
-                    y nutrición inteligente. Tu mejor versión te está esperando.
+                    Descubre herramientas inteligentes para monitorear tu salud, 
+                    calcular tu IMC y optimizar tu nutrición. Tu bienestar empieza hoy.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#calculadora" class="btn btn-primary">Calcula Tu Progreso</a>
-                    <a href="#nutricion" class="btn btn-secondary">Ver Nutrición</a>
+                    <a href="#imc" class="btn btn-primary">Calcular IMC</a>
+                    <a href="#proteinas" class="btn btn-secondary">Proteínas Diarias</a>
                 </div>
                 <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">10k+</span>
-                        <span class="stat-label">Miembros Activos</span>
+                    <div class="stat">
+                        <span class="stat-number">IMC</span>
+                        <span class="stat-label">Calculadora precisa</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Rutinas</span>
+                    <div class="stat">
+                        <span class="stat-number">🥗</span>
+                        <span class="stat-label">Nutrición inteligente</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">98%</span>
-                        <span class="stat-label">Satisfacción</span>
+                    <div class="stat">
+                        <span class="stat-number">💾</span>
+                        <span class="stat-label">Datos guardados</span>
                     </div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-icon">🔥</div>
-                    <div class="card-info">
-                        <span class="card-value">450</span>
-                        <span class="card-label">Calorías</span>
+                <div class="hero-card card-1">
+                    <span class="card-icon">❤️</span>
+                    <div>
+                        <span class="card-value">72</span>
+                        <span class="card-unit">bpm</span>
                     </div>
                 </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon">💪</div>
-                    <div class="card-info">
-                        <span class="card-value">85%</span>
-                        <span class="card-label">Fuerza</span>
+                <div class="hero-card card-2">
+                    <span class="card-icon">💧</span>
+                    <div>
+                        <span class="card-value">2.5</span>
+                        <span class="card-unit">L</span>
                     </div>
                 </div>
-                <div class="floating-card card-3">
-                    <div class="card-icon">⚡</div>
-                    <div class="card-info">
-                        <span class="card-value">2.5h</span>
-                        <span class="card-label">Energía</span>
-                    </div>
-                </div>
-                <div class="hero-image-container">
-                    <div class="hero-glow"></div>
-                    <svg class="hero-illustration" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <div class="hero-illustration">
+                    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                            <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
                             </linearGradient>
                         </defs>
-                        <circle cx="200" cy="80" r="30" fill="url(#bodyGrad)" opacity="0.9"/>
-                        <path d="M200 110 L200 200 M200 140 L150 180 M200 140 L250 180 M200 200 L160 280 M200 200 L240 280" 
-                              stroke="url(#bodyGrad)" stroke-width="12" stroke-linecap="round" fill="none"/>
-                        <ellipse cx="170" cy="150" rx="15" ry="25" fill="#10B981" opacity="0.6"/>
-                        <ellipse cx="230" cy="150" rx="15" ry="25" fill="#10B981" opacity="0.6"/>
-                        <circle cx="200" cy="200" r="120" stroke="#10B981" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="10,5">
-                            <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="20s" repeatCount="indefinite"/>
+                        <!-- Círculo exterior -->
+                        <circle cx="200" cy="200" r="150" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.3"/>
+                        <circle cx="200" cy="200" r="120" fill="none" stroke="url(#grad1)" stroke-width="4" opacity="0.5"/>
+                        
+                        <!-- Figura humana estilizada -->
+                        <circle cx="200" cy="100" r="35" fill="url(#grad1)" opacity="0.9"/>
+                        <path d="M200 140 L200 260 M200 180 L140 220 M200 180 L260 220 M200 260 L150 340 M200 260 L250 340" 
+                              stroke="url(#grad1)" stroke-width="12" stroke-linecap="round" fill="none"/>
+                        
+                        <!-- Elementos decorativos -->
+                        <circle cx="100" cy="200" r="8" fill="#10b981" opacity="0.6">
+                            <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="300" cy="150" r="6" fill="#06b6d4" opacity="0.6">
+                            <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="280" cy="280" r="10" fill="#10b981" opacity="0.4">
+                            <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" repeatCount="indefinite"/>
                         </circle>
                     </svg>
                 </div>
@@ -113,340 +112,168 @@
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
-            <span>Desplázate para explorar</span>
+            <span>Explora más</span>
         </div>
     </section>
 
-    <!-- Sección de Estadísticas y Gráficas -->
-    <section id="estadisticas" class="stats-section">
+    <!-- Sección IMC -->
+    <section id="imc" class="section imc-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">ANÁLISIS DE RENDIMIENTO</span>
-                <h2 class="section-title">Datos Que Impulsan Tu Progreso</h2>
-                <p class="section-subtitle">Visualiza tu evolución y optimiza cada entrenamiento</p>
+                <span class="section-tag">Herramienta de Salud</span>
+                <h2 class="section-title">Calculadora de IMC</h2>
+                <p class="section-subtitle">Conoce tu Índice de Masa Corporal y descubre tu estado de salud actual</p>
             </div>
 
-            <div class="charts-grid">
-                <div class="chart-card">
-                    <div class="chart-header">
-                        <h3>Calorías Quemadas por Tipo</h3>
-                        <div class="chart-legend">
-                            <span class="legend-item"><span class="dot" style="background:#10B981"></span>Fuerza</span>
-                            <span class="legend-item"><span class="dot" style="background:#3B82F6"></span>Cardio</span>
-                            <span class="legend-item"><span class="dot" style="background:#F59E0B"></span>HIIT</span>
-                            <span class="legend-item"><span class="dot" style="background:#8B5CF6"></span>Movilidad</span>
-                        </div>
+            <div class="calculator-grid">
+                <div class="calculator-card">
+                    <div class="calculator-header">
+                        <div class="calculator-icon">⚖️</div>
+                        <h3>Datos Personales</h3>
                     </div>
-                    <div class="chart-container">
-                        <canvas id="caloriesChart"></canvas>
-                    </div>
-                    <div class="chart-insights">
-                        <div class="insight">
-                            <span class="insight-value">HIIT +45%</span>
-                            <span class="insight-label">más efectivo</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="chart-card wide">
-                    <div class="chart-header">
-                        <h3>Evolución Semanal de Progreso</h3>
-                        <div class="chart-tabs">
-                            <button class="tab-btn active" data-metric="weight">Peso Levantado</button>
-                            <button class="tab-btn" data-metric="cardio">Cardio (min)</button>
-                            <button class="tab-btn" data-metric="calories">Calorías</button>
-                        </div>
-                    </div>
-                    <div class="chart-container line-chart-container">
-                        <canvas id="progressChart"></canvas>
-                    </div>
-                    <div class="progress-metrics">
-                        <div class="metric">
-                            <span class="metric-trend up">↗</span>
-                            <div class="metric-info">
-                                <span class="metric-value" id="trendValue">+12%</span>
-                                <span class="metric-label">vs semana pasada</span>
+                    
+                    <form id="imcForm" class="calculator-form">
+                        <div class="input-group">
+                            <label for="imc-weight">Peso (kg)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="imc-weight" step="0.1" min="20" max="300" placeholder="Ej: 70.5" required>
+                                <span class="input-unit">kg</span>
                             </div>
                         </div>
+
+                        <div class="input-group">
+                            <label for="imc-height">Altura (cm)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="imc-height" step="1" min="50" max="300" placeholder="Ej: 175" required>
+                                <span class="input-unit">cm</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-calculate">
+                            <span>Calcular IMC</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L12 6M16 10L12 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="saved-data" id="savedWeight">
+                        <span class="saved-label">Último peso guardado:</span>
+                        <span class="saved-value">--</span>
+                    </div>
+                </div>
+
+                <div class="result-card" id="imcResult">
+                    <div class="result-placeholder">
+                        <div class="placeholder-icon">📊</div>
+                        <p>Ingresa tus datos para calcular tu IMC</p>
                     </div>
                 </div>
             </div>
 
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon">🏋️</div>
-                    <div class="stat-content">
-                        <span class="stat-value" data-target="156">0</span>
-                        <span class="stat-unit">kg</span>
-                        <span class="stat-desc">Peso máximo levantado</span>
+            <!-- Tabla de referencia IMC -->
+            <div class="reference-table">
+                <h4>Tabla de Referencia IMC</h4>
+                <div class="table-grid">
+                    <div class="table-row header">
+                        <span>Categoría</span>
+                        <span>Rango IMC</span>
                     </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">⏱️</div>
-                    <div class="stat-content">
-                        <span class="stat-value" data-target="45">0</span>
-                        <span class="stat-unit">min</span>
-                        <span class="stat-desc">Promedio de cardio</span>
+                    <div class="table-row" data-category="bajo">
+                        <span><span class="dot" style="background:#3b82f6"></span>Bajo peso</span>
+                        <span>Menos de 18.5</span>
                     </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">🔥</div>
-                    <div class="stat-content">
-                        <span class="stat-value" data-target="3200">0</span>
-                        <span class="stat-unit">kcal</span>
-                        <span class="stat-desc">Quemadas esta semana</span>
+                    <div class="table-row active" data-category="normal">
+                        <span><span class="dot" style="background:#10b981"></span>Peso normal</span>
+                        <span>18.5 - 24.9</span>
                     </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">📈</div>
-                    <div class="stat-content">
-                        <span class="stat-value" data-target="23">0</span>
-                        <span class="stat-unit">%</span>
-                        <span class="stat-desc">Mejora en fuerza</span>
+                    <div class="table-row" data-category="sobrepeso">
+                        <span><span class="dot" style="background:#f59e0b"></span>Sobrepeso</span>
+                        <span>25.0 - 29.9</span>
+                    </div>
+                    <div class="table-row" data-category="obesidad">
+                        <span><span class="dot" style="background:#ef4444"></span>Obesidad</span>
+                        <span>30.0 o más</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NUEVA SECCIÓN: COMPARADOR DE PROGRESO -->
-    <section id="comparador" class="comparator-section">
+    <!-- Sección Proteínas -->
+    <section id="proteinas" class="section proteins-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">COMPARADOR AVANZADO</span>
-                <h2 class="section-title">Compara Tu Evolución</h2>
-                <p class="section-subtitle">Analiza el progreso entre semanas y visualiza tus mejoras</p>
+                <span class="section-tag">Nutrición Inteligente</span>
+                <h2 class="section-title">Calculadora de Proteínas</h2>
+                <p class="section-subtitle">Descubre cuántas proteínas necesitas según tu peso y nivel de actividad</p>
             </div>
 
-            <div class="comparator-wrapper">
-                <div class="comparator-controls">
-                    <div class="week-selector">
-                        <div class="week-box">
-                            <label>Semana Base</label>
-                            <select id="week1" class="week-select">
-                                <option value="0">Semana 1</option>
-                                <option value="1">Semana 2</option>
-                                <option value="2">Semana 3</option>
-                                <option value="3">Semana 4</option>
-                                <option value="4">Semana 5</option>
-                                <option value="5">Semana 6</option>
-                            </select>
-                            <div class="week-info" id="week1Info">
-                                <span class="week-date">1-7 Ene</span>
-                                <span class="week-status">Inicio</span>
-                            </div>
-                        </div>
-
-                        <div class="vs-divider">
-                            <span>VS</span>
-                        </div>
-
-                        <div class="week-box">
-                            <label>Semana a Comparar</label>
-                            <select id="week2" class="week-select">
-                                <option value="0">Semana 1</option>
-                                <option value="1">Semana 2</option>
-                                <option value="2">Semana 3</option>
-                                <option value="3" selected>Semana 4</option>
-                                <option value="4">Semana 5</option>
-                                <option value="5">Semana 6</option>
-                            </select>
-                            <div class="week-info" id="week2Info">
-                                <span class="week-date">22-28 Ene</span>
-                                <span class="week-status">Actual</span>
-                            </div>
-                        </div>
+            <div class="calculator-grid">
+                <div class="calculator-card">
+                    <div class="calculator-header">
+                        <div class="calculator-icon">🥩</div>
+                        <h3>Tu Perfil</h3>
                     </div>
 
-                    <button class="btn btn-compare" id="compareBtn">
-                        <span>Generar Comparación</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M4 10H16M16 10L12 6M16 10L12 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <form id="proteinForm" class="calculator-form">
+                        <div class="input-group">
+                            <label for="protein-weight">Peso (kg)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="protein-weight" step="0.1" min="20" max="300" placeholder="Ej: 70.5" required>
+                                <span class="input-unit">kg</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Nivel de Actividad</label>
+                            <div class="activity-options">
+                                <label class="activity-option">
+                                    <input type="radio" name="activity" value="sedentary" checked>
+                                    <span class="option-content">
+                                        <span class="option-icon">🛋️</span>
+                                        <span class="option-text">
+                                            <strong>Sedentario</strong>
+                                            <small>Poco o ningún ejercicio</small>
+                                        </span>
+                                    </span>
+                                </label>
+                                <label class="activity-option">
+                                    <input type="radio" name="activity" value="moderate">
+                                    <span class="option-content">
+                                        <span class="option-icon">🚶</span>
+                                        <span class="option-text">
+                                            <strong>Moderado</strong>
+                                            <small>Ejercicio 3-5 días/semana</small>
+                                        </span>
+                                    </span>
+                                </label>
+                                <label class="activity-option">
+                                    <input type="radio" name="activity" value="intense">
+                                    <span class="option-content">
+                                        <span class="option-icon">💪</span>
+                                        <span class="option-text">
+                                            <strong>Intenso</strong>
+                                            <small>Ejercicio 6-7 días/semana</small>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-calculate">
+                            <span>Calcular Proteínas</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L12 6M16 10L12 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
 
-                <div class="comparator-results" id="comparatorResults">
-                    <div class="comparison-chart-container">
-                        <canvas id="comparisonChart"></canvas>
-                    </div>
-
-                    <div class="comparison-metrics" id="comparisonMetrics">
-                        <div class="metric-card">
-                            <div class="metric-icon">🔥</div>
-                            <div class="metric-details">
-                                <span class="metric-name">Calorías Totales</span>
-                                <div class="metric-values">
-                                    <span class="value-old" id="calOld">0</span>
-                                    <span class="value-arrow">→</span>
-                                    <span class="value-new" id="calNew">0</span>
-                                </div>
-                                <div class="metric-change positive" id="calChange">
-                                    <span class="change-percent">+0%</span>
-                                    <span class="change-label">vs semana anterior</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="metric-card">
-                            <div class="metric-icon">⏱️</div>
-                            <div class="metric-details">
-                                <span class="metric-name">Minutos Entrenamiento</span>
-                                <div class="metric-values">
-                                    <span class="value-old" id="minOld">0</span>
-                                    <span class="value-arrow">→</span>
-                                    <span class="value-new" id="minNew">0</span>
-                                </div>
-                                <div class="metric-change positive" id="minChange">
-                                    <span class="change-percent">+0%</span>
-                                    <span class="change-label">vs semana anterior</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="metric-card">
-                            <div class="metric-icon">🏋️</div>
-                            <div class="metric-details">
-                                <span class="metric-name">Peso Promedio (kg)</span>
-                                <div class="metric-values">
-                                    <span class="value-old" id="weightOld">0</span>
-                                    <span class="value-arrow">→</span>
-                                    <span class="value-new" id="weightNew">0</span>
-                                </div>
-                                <div class="metric-change positive" id="weightChange">
-                                    <span class="change-percent">+0%</span>
-                                    <span class="change-label">vs semana anterior</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="metric-card">
-                            <div class="metric-icon">🎯</div>
-                            <div class="metric-details">
-                                <span class="metric-name">Sesiones Completadas</span>
-                                <div class="metric-values">
-                                    <span class="value-old" id="sessOld">0</span>
-                                    <span class="value-arrow">→</span>
-                                    <span class="value-new" id="sessNew">0</span>
-                                </div>
-                                <div class="metric-change positive" id="sessChange">
-                                    <span class="change-percent">+0%</span>
-                                    <span class="change-label">vs semana anterior</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="comparison-summary" id="comparisonSummary">
-                        <div class="summary-icon">📊</div>
-                        <div class="summary-content">
-                            <h4>Resumen de tu Progreso</h4>
-                            <p id="summaryText">Selecciona dos semanas para ver tu comparación detallada.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Nutrición -->
-    <section id="nutricion" class="nutrition-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">NUTRICIÓN INTELIGENTE</span>
-                <h2 class="section-title">Combustible Para Tu Éxito</h2>
-                <p class="section-subtitle">Alimentos estratégicamente seleccionados para maximizar tu rendimiento</p>
-            </div>
-
-            <div class="nutrition-filters">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="protein">Alto en Proteína</button>
-                <button class="filter-btn" data-filter="carbs">Carbohidratos</button>
-                <button class="filter-btn" data-filter="fats">Grasas Saludables</button>
-            </div>
-
-            <div class="food-grid" id="foodGrid">
-            </div>
-
-            <div class="nutrition-tip">
-                <div class="tip-icon">💡</div>
-                <div class="tip-content">
-                    <h4>Consejo Pro</h4>
-                    <p>Distribuye tu ingesta de proteínas en 4-5 comidas durante el día para maximizar la síntesis muscular.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Calculadora TMB -->
-    <section id="calculadora" class="calculator-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">CALCULADORA AVANZADA</span>
-                <h2 class="section-title">Conoce Tu Metabolismo</h2>
-                <p class="section-subtitle">Calcula tu Tasa Metabólica Basal y optimiza tu alimentación</p>
-            </div>
-
-            <div class="calculator-wrapper">
-                <div class="calculator-form">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="gender">Género</label>
-                            <div class="gender-selector">
-                                <button type="button" class="gender-btn active" data-gender="male">
-                                    <span class="gender-icon">♂</span>
-                                    <span>Hombre</span>
-                                </button>
-                                <button type="button" class="gender-btn" data-gender="female">
-                                    <span class="gender-icon">♀</span>
-                                    <span>Mujer</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="age">Edad (años)</label>
-                            <input type="number" id="age" min="15" max="100" value="25" class="form-input">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="weight">Peso (kg)</label>
-                            <input type="number" id="weight" min="30" max="300" value="75" class="form-input">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="height">Altura (cm)</label>
-                            <input type="number" id="height" min="100" max="250" value="175" class="form-input">
-                        </div>
-
-                        <div class="form-group full-width">
-                            <label for="activity">Nivel de Actividad</label>
-                            <div class="activity-slider-container">
-                                <input type="range" id="activity" min="1" max="5" value="3" class="activity-slider">
-                                <div class="activity-labels">
-                                    <span>Sedentario</span>
-                                    <span>Ligero</span>
-                                    <span>Moderado</span>
-                                    <span>Activo</span>
-                                    <span>Muy Activo</span>
-                                </div>
-                                <div class="activity-value" id="activityValue">Moderado</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button type="button" class="btn btn-calculate" id="calculateBtn">
-                        <span>Calcular Mi Metabolismo</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M4 10H16M16 10L12 6M16 10L12 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="calculator-results" id="results">
-                    <div class="results-placeholder">
-                        <div class="placeholder-icon">🧮</div>
-                        <p>Ingresa tus datos y calcula tu TMB</p>
+                <div class="result-card" id="proteinResult">
+                    <div class="result-placeholder">
+                        <div class="placeholder-icon">🎯</div>
+                        <p>Completa el formulario para ver tu recomendación</p>
                     </div>
                 </div>
             </div>
@@ -459,35 +286,21 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20" cy="20" r="18" stroke="#10B981" stroke-width="3"/>
-                            <path d="M12 20H28M20 12V28" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
-                        </svg>
-                        <span>FitLife Pro</span>
+                        <div class="logo-icon">🌿</div>
+                        <span>VitalFit</span>
                     </div>
-                    <p>Transformando vidas a través del fitness y la nutrición inteligente desde 2024.</p>
+                    <p>Tu compañero digital para un estilo de vida saludable y equilibrado.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4>Herramientas</h4>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#estadisticas">Estadísticas</a></li>
-                        <li><a href="#comparador">Comparador</a></li>
-                        <li><a href="#nutricion">Nutrición</a></li>
-                        <li><a href="#calculadora">Calculadora</a></li>
+                        <li><a href="#imc">Calculadora IMC</a></li>
+                        <li><a href="#proteinas">Proteínas Diarias</a></li>
                     </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Síguenos</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">IG</a>
-                        <a href="#" class="social-link">YT</a>
-                        <a href="#" class="social-link">TT</a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 FitLife Pro. Todos los derechos reservados.</p>
+                <p>&copy; 2024 VitalFit. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
