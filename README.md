@@ -69,3 +69,33 @@ Requisitos adicionales:
 - Asegúrate de que esta nueva sección también sea responsive.
 
 Entrégame el código completo actualizado de los tres archivos.
+
+# PROMT 3
+
+Quiero que añadas una nueva sección a la landing page llamada “Calculadora de Macronutrientes”, accesible desde el menú superior.
+
+Esta sección debe permitir al usuario introducir:
+- Peso (kg)
+- Altura (cm)
+- Edad
+- Sexo
+- Nivel de actividad física
+- Objetivo (perder grasa, mantener peso, ganar masa muscular)
+
+Con esos datos, quiero que el sistema:
+1. Calcule el TDEE (gasto energético total diario).
+2. Genere automáticamente una distribución recomendada de macronutrientes:
+   - Proteínas (g y %)
+   - Carbohidratos (g y %)
+   - Grasas (g y %)
+
+3. Muestre los resultados mediante:
+   - Una gráfica circular (hecha con JavaScript vanilla, sin librerías).
+   - Un cuadro resumen con los valores exactos.
+
+Requisitos:
+- Mantén la estética actual de la landing (fitness, moderna, colores oscuros con acentos).
+- La sección debe ser totalmente responsive.
+- No elimines nada de lo que ya existe.
+- Modifica únicamente lo necesario en index.html, styles.css y script.js.
+- Entrégame el código completo actualizado de los tres archivos.
